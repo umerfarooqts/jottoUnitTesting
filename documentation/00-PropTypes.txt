@@ -1,0 +1,23 @@
+In this tutorial, we will learn about prop types.
+You can use PropTypes to basically test  if the type of the object is a certain data type. e.g
+-- optionalArray: PropTypes.array
+-- optionalBool: PropTypes.bool
+-- optionalFunc: PropTypes.func
+-- optionalNumber: PropTypes.number
+-- optionalObject: PropTypes.object
+-- optionalString: PropTypes.string
+-- optionalSymbol: PropTypes.symbol
+
+We will also install Check-Proptypes
+Manually check PropTypes-compatible proptypes, returning any errors instead of logging them to console.error.
+
+1) Step 1: Install and Import the Library PropTypes
+---------------------------------------------------
+- npm install prop-types
+- npm install --save-dev check-prop-types
+
+2) Step 2: Usage
+----------------
+
+- import PropTypes from 'prop-types';
+- import checkPropTypes from 'check-prop-types';
