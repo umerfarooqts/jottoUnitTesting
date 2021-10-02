@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from 'prop-types';
 
 /**
- * Functional React Component for Congrulatory Message
+ * Functional React Component for Congratulatory Message
  * @function
  * @returns {JSX.Element} - Rendered Component
  */
@@ -10,7 +10,7 @@ import PropTypes from 'prop-types';
 export const Congrats = (props) => {
     if (props.success)
         return(
-            <div data-test={"component-congrats"}>
+            <div data-test={"component-congrats"} className="alert alert-success">
                 <span data-test={"component-message"}>
                     Congratulations! You guessed the Word!!!
                 </span>

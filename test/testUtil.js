@@ -20,7 +20,7 @@ export const findByTestAttr = (wrapper, val) => {
  * @returns
  */
 
-export const checkProps = (component, conformingProps)=>{
+export const checkProps = (component, conformingProps)=> {
     const propError = checkPropTypes(component.propTypes, conformingProps, 'prop', component.name, '');
     expect(propError).toBeUndefined();
 }

@@ -35,6 +35,7 @@ test('Render Congrats - Congratulation Text Because "success" prop is false', ()
     expect(component.text().length).not.toBe(0);
 });
 
+//Note: This is not working for some reasons.
 test("Doesn't throw warnings with expected props", ()=>{
     const expectedProps = {success: false};
     checkProps(Congrats, expectedProps);

@@ -1,26 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {Congrats} from "./Congrats";
+import GuessedWords from "./GuessedWords";
+import Input from "./Input";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const guessWordTemp = [
+        {guessedWord: 'agile', letterMatchCount: 1},
+        {guessedWord: 'train', letterMatchCount: 3},
+        {guessedWord: 'party', letterMatchCount: 5}
+    ]
+
+    return (
+        <div className="container">
+            <h1>Jotto Application</h1>
+            <Input secretWord={"abc123"}/>
+            <Congrats success={true} />
+            <GuessedWords guessedWords={guessWordTemp}/>
+
+        </div>
+    );
 }
 
 export default App;
