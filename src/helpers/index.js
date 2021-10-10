@@ -10,6 +10,7 @@ export function getLetterMatchCount(guessedWord, secretWord) {
         let findLetter = guessedWord.indexOf(letter);
         if (findLetter > -1) {
             guessedWord = guessedWord.replace(letter, '-');
+            //We can further remove the letter if required.
             return true;
         }
         return  false;

@@ -1,0 +1,11 @@
+1) .only, .skip and .todo
+=========================
+Sometimes you want to skip some test because the implementation for passing those tests will take time.
+- .only: Only run test/describe with .only specified.
+- .skip: Don't run any test/describe with .skip specified. Runs all other tests.
+- .todo: It is to remind you to wire a particular test later. Generally not used as much.
+
+To use the test, you need to postfix the keyword with describe or test.
+Example:
+- describe.only
+- test.todo('Invalid Test'); //Note you don't add the implementation

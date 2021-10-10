@@ -5,18 +5,22 @@ import GuessedWords from "./GuessedWords";
 import Input from "./Input";
 
 function App() {
-    const guessWordTemp = [
+    /*const guessWordTemp = [
         {guessedWord: 'agile', letterMatchCount: 1},
         {guessedWord: 'train', letterMatchCount: 3},
         {guessedWord: 'party', letterMatchCount: 5}
-    ]
+    ]*/
+    // TODO: Get the props from shared state
+    const success = false;
+    const secretWord = 'party';
+    const guessedWords = [];
 
     return (
-        <div className="container">
+        <div data-test="component-app" className="container">
             <h1>Jotto Application</h1>
-            <Input secretWord={"abc123"}/>
-            <Congrats success={true} />
-            <GuessedWords guessedWords={guessWordTemp}/>
+            <Congrats success={success} />
+            <Input secretWord={secretWord}/>
+            <GuessedWords guessedWords={guessedWords}/>
 
         </div>
     );
