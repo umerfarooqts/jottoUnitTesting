@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import {Congrats} from "./components/Congrats";
 import GuessedWords from "./components/GuessedWords";
 import Input from "./components/Input";
