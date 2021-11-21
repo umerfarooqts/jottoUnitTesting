@@ -1,0 +1,3 @@
+Moxios is basically a server that should be installed as dev dependency. It is only used to Mock all the calls via axios.
+
+So You create a response in the test itself for the API call which instead of using axios, uses the dummy server. See Figure-00.
