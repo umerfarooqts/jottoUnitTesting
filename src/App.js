@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import {Congrats} from "./Congrats";
-import GuessedWords from "./GuessedWords";
-import Input from "./Input";
+import {Congrats} from "./components/Congrats";
+import GuessedWords from "./components/GuessedWords";
+import Input from "./components/Input";
 
 function App() {
     /*const guessWordTemp = [

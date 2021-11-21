@@ -1,7 +1,7 @@
 import React from 'react';
 import {shallow} from 'enzyme';
-import {findByTestAttr, checkProps} from '../test/testUtil';
-import {Congrats} from "./Congrats";
+import {findByTestAttr, checkProps} from '../../test/testUtil';
+import {Congrats} from "../components/Congrats";
 
 
 /**

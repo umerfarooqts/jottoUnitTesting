@@ -13,8 +13,8 @@ import React from "react";
 // By using mount, we will get the state of the children as well.
 import { mount } from 'enzyme';
 
-import App from "./App";
-import { findByTestAttr } from "../test/testUtil";
+import App from "../App";
+import { findByTestAttr } from "../../test/testUtil";
 
 // The setup functions can be a bit different based on if we are using
 // Redux or React Context

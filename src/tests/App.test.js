@@ -7,9 +7,9 @@
  */
 
 import { shallow } from 'enzyme';
-import { findByTestAttr } from "../test/testUtil";
+import { findByTestAttr } from "../../test/testUtil";
 import React from "react";
-import App from './App';
+import App from '../App';
 
 /**
  * Setup function for App component
